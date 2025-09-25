@@ -23,8 +23,8 @@ namespace gcodb
 
             //Usando a string de conexão via appsettings.json
             optionsBuilder
-                //.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
-                .UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
+                .UseNpgsql(_configuration.GetConnectionString("DefaultConnection"));
+                //.UseSqlServer(_configuration.GetConnectionString("DefaultConnection"));
 
 
             //EVITAR: Versão usando o PostgreSQL e a string de conexão hardcoded

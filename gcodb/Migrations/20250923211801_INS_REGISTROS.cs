@@ -10,9 +10,9 @@ namespace gcodb.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (1, 'Registro1', GETDATE())");
-            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (2, 'Registro2', GETDATE())");
-            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (3, 'Registro3', GETDATE())");
+            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (1, 'Registro1', NOW())");
+            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (2, 'Registro2', NOW())");
+            migrationBuilder.Sql("INSERT INTO TABELATESTE (ID, DESCRICAO, DATAHORA) VALUES (3, 'Registro3', NOW())");
         }
 
         /// <inheritdoc />
